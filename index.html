@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YourProject: Dynamic 4D Geometry</title>
+  <link rel="stylesheet" href="files/style.css">
+  <link rel="icon" href="icons/monst3r_icon.png" type="image/png">
+  <script src="files/jquery.js"></script>
+  <script src="files/jquery.mlens-1.0.min.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <h1>
+      <img src="icons/monst3r_icon.png" width="64" style="vertical-align: middle;">
+      <strong>YourProject: Learning 4D Structure from Motion</strong>
+    </h1>
+
+    <p id="authors">
+      <a href="#">Your Name<sup>1</sup></a>,
+      <a href="#">Coauthor<sup>2</sup></a>,
+      <a href="#">Another<sup>3</sup></a>
+      <br>
+      <span class="institution"><sup>1</sup>Your Institute, <sup>2</sup>Collaborator Lab</span><br>
+      <span class="conference">Conference 2025</span>
+    </p>
+
+    <video width="100%" controls>
+      <source src="files/teaser_vid.mp4" type="video/mp4">
+    </video>
+
+    <p style="text-align:center;">
+      <a href="files/paper.pdf" target="_blank">[Paper]</a>
+      &nbsp;&nbsp;
+      <a href="page1.html" target="_blank" style="color:rgb(238, 60, 223); font-weight:bold;">[Interactive Results🔥]</a>
+      &nbsp;&nbsp;
+      <a href="https://github.com/yourproject" target="_blank">[Code]</a>
+    </p>
+  </div>
+
+  <div class="content">
+    <h2>Interactive 4D Visualization</h2>
+    <p>Explore the 4D reconstruction results below.</p>
+
+    <div class="instructions">
+      <div class="instruction-item">
+        <img src="icons/left-click.png"><span>Rotate</span>
+      </div>
+      <div class="instruction-item">
+        <img src="icons/right-click.png"><span>Move</span>
+      </div>
+      <div class="instruction-item">
+        <img src="icons/scroll-wheel.png"><span>Zoom</span>
+      </div>
+    </div>
+
+    <p style="text-align:center;">(Results are downsampled for faster rendering)</p>
+
+    <div id="viewer-container">
+      <iframe src="build/viewer.html?playbackPath=recordings/sample.viser"></iframe>
+      <iframe src="build/viewer.html?playbackPath=recordings/scene2.viser"></iframe>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Abstract</h2>
+    <p>Your abstract text goes here describing your 4D motion reconstruction pipeline, data, and insights.</p>
+  </div>
+
+  <div class="content" id="acknowledgements">
+    <p><strong>Acknowledgements:</strong> Template inspired by
+      <a href="https://monst3r-project.github.io/">MonST3R</a> and powered by
+      <a href="https://github.com/nerfstudio-project/viser">Viser</a>.
+    </p>
+  </div>
+</body>
+</html>

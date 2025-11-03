@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  padding: 2em;
+  line-height: 1.5;
+  background: #fff;
+  color: #333;
+}
+
+.content {
+  margin-bottom: 3em;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+iframe {
+  border-radius: 0.5em;
+  width: 27.5em;
+  height: 27.5em;
+  border: none;
+  box-shadow: 0 0 1em rgba(0,0,0,0.15);
+}
+
+#viewer-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.instructions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+.instruction-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.instruction-item img {
+  width: 32px;
+  height: 32px;
+}
